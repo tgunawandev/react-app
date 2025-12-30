@@ -1,0 +1,57 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Introduction" />
+
+# React Monorepo UI Library
+
+Welcome to the component documentation for the React Monorepo project.
+
+## Overview
+
+This Storybook documents the shared UI components available in the `@repo/ui` package. These components are built with:
+
+- **React 19** - Latest React with concurrent features
+- **Tailwind CSS** - Utility-first CSS framework
+- **Radix UI** - Accessible, unstyled primitives
+- **Shadcn/ui** - Beautiful, copy-paste components
+- **Class Variance Authority** - Variant-based styling
+
+## Getting Started
+
+To use these components in your application, import them from `@repo/ui`:
+
+```tsx
+import { Button, Card, Input } from '@repo/ui';
+
+function MyComponent() {
+  return (
+    <Card>
+      <Input placeholder="Enter text..." />
+      <Button>Submit</Button>
+    </Card>
+  );
+}
+```
+
+## Package Structure
+
+```
+packages/ui/
+├── src/
+│   ├── components/
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   ├── input.tsx
+│   │   └── ...
+│   ├── lib/
+│   │   └── utils.ts
+│   └── index.ts
+├── tailwind.config.ts
+└── package.json
+```
+
+## Theming
+
+All components support dark mode through CSS variables. Toggle between themes using the toolbar above.
+
+The color system uses HSL values defined in CSS variables, making it easy to customize the look and feel of your application.

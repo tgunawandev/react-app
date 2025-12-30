@@ -1,0 +1,31 @@
+{
+  "name": "@repo/types",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@repo/config-eslint": "workspace:*",
+    "@repo/config-typescript": "workspace:*",
+    "eslint": "^9.17.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}

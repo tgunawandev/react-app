@@ -1,0 +1,22 @@
+{
+  "name": "@repo/config-tailwind",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./tailwind.config.ts",
+    "./globals.css": "./globals.css"
+  },
+  "files": [
+    "tailwind.config.ts",
+    "globals.css"
+  ],
+  "dependencies": {
+    "tailwindcss": "^3.4.17",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}

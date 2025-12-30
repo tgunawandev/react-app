@@ -1,0 +1,17 @@
+{
+  "extends": "@repo/config-typescript/react-app.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "strict": false,
+    "noImplicitAny": false,
+    "verbatimModuleSyntax": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
